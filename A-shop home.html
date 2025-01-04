@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS-Shop Official</title>
+    <link rel="icon" type="image/x-icon" href="logoooo.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AS-Shop</div>
+        <nav>
+            <ul>
+                <li><a href="A-shop home.html">Home</a></li>
+                <li><a href="A-shop product.html">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="#cartModal">Cart (<span id="cart-count">0</span>)</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to AS-Shop</h1>
+            <p>Your one-stop solution for shopping.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </section>
+
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <!-- Products will be loaded here -->
+            </div>
+        </section>
+
+        <div id="cartModal" class="modal">
+            <div class="modal-content">
+                <h2>Your Cart</h2>
+                <div id="cart-items"></div>
+                <p>Total: <span id="cart-total">0</span></p>
+                <!--  close button  -->
+                <button id="close-cart" class="close-btn">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AS-Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

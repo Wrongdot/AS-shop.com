@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS-Shop | Products</title>
+    <link rel="icon" type="image/x-icon" href="logoooo.jpg">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AS-Shop</div>
+        <nav>
+            <ul>
+                <li><a href="A-shop home.html">Home</a></li>
+                <li><a href="A-shop product.html">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <button id="cart-button">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <!-- Cart Overlay Section -->
+    <div id="cart-overlay" style="display: none;">
+        <div class="cart-container">
+            <button id="close-cart" class="btn close-cart">Close</button>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <h3 id="cart-total">Total: Rs 0</h3>
+        </div>
+    </div>
+
+    <main>
+        <!-- Search and Filter Section -->
+        <section id="controls">
+            <input type="text" id="search-bar" placeholder="Search for products...">
+            <div id="filter">
+                <label for="min-price">Min Price:</label>
+                <input type="number" id="min-price" min="0" step="100">
+                <label for="max-price">Max Price:</label>
+                <input type="number" id="max-price" min="0" step="100">
+                <button id="filter-button">Filter</button>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products">
+            <div class="product-list" id="product-list">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 AS-Shop. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scriptss.js"></script>
+</body>
+</html>
